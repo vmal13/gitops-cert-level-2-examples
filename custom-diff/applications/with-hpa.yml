@@ -7,7 +7,6 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-
   source:
     repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
     targetRevision: HEAD
@@ -16,7 +15,6 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: example01
-
   # Sync policy
   syncPolicy:
     syncOptions:
